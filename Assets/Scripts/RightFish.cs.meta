@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b1e10c007659b9e468f6dca68979f003
+timeCreated: 1536462775
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rightFishPrefab: {fileID: 1322323133797852, guid: f7b99ddda56252148b4140091766d6b0,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
