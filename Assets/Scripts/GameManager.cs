@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
         audioSource = GameObject.Find("Main Camera").GetComponent<AudioSource>();
     }
@@ -28,7 +30,7 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-               
+
                 gameOver = false;
                 uiManager.HideTitleScreen();
                 audioSource.Play();
@@ -39,9 +41,16 @@ public class GameManager : MonoBehaviour
                     spawnManager.SpawnLeftFish();
                     turret.SetActive(true);
                     uiManager.StartClock();
-                    
+
                 }
-            }
-        } 
+            } 
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+            SceneManager.LoadScene(0);
+        }
+
     }
+
 }

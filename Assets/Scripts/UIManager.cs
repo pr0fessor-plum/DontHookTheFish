@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
 
     public void HideTitleScreen()
     {
-        titleScreen.SetActive(false);
+        titleScreen.SetActive(false);  
     }
 
     public void UpdateLives(int currentLives)

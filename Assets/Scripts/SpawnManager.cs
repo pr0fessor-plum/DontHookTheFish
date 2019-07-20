@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
 
     public Bubbles bubbleScript;
     public int treasuresInScene = 0;
+
  
 
     [SerializeField]
