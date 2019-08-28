@@ -26,6 +26,7 @@ public class UIManager : MonoBehaviour
     void Awake()
     {
         scoreText.text = score.ToString();
+        Time.timeScale = 1;
 
 
     }
